@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo header__logo" href="#">
+          <svg class="logo__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20 4C10 4 4.5 9.5 4 17c0 0-.2 3 3 3 8.5 0 13.5-6 13-16z" />
+            <path
+              d="M4.5 20.5C8 14 12 10 17 7.5"
+              stroke="#fff"
+              stroke-width="1.4"
+              fill="none"
+            />
+          </svg>
+          <span class="logo__text">Green&nbsp;Home</span>
+        </a>
+
+        <nav class="nav header__nav">
+          <a class="nav__link" href="#catalog">Каталог</a>
+          <a class="nav__link" href="#about">О магазине</a>
+          <a class="nav__link" href="#reviews">Отзывы</a>
+          <a class="nav__link" href="#contacts">Связаться с нами</a>
+        </nav>
+
+        <button class="button button--dark header__login">Войти</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title">Растения для&nbsp;каждого дома</h1>
+            <p class="hero__text">
+              Найди идеальное растение для уюта, стиля и чистого воздуха
+            </p>
+            <div class="hero__actions">
+              <button class="button button--dark">Подобрать растение</button>
+              <button class="button button--outline">Коллекция</button>
+            </div>
+          </div>
+          <div class="hero__image-wrap">
+            <img class="hero__image" src="images/monstera.jpg" alt="Монстера в кашпо" />
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog" id="catalog">
+        <div class="container">
+          <div class="catalog__header">
+            <h2 class="catalog__title">Каталог</h2>
+            <a class="catalog__link" href="#">Смотреть все →</a>
+          </div>
+
+          <div class="catalog__grid">
+            <article class="card">
+              <img class="card__image" src="images/monstera.jpg" alt="Монстера" />
+              <div class="card__body">
+                <h3 class="card__title">Монстера</h3>
+                <p class="card__text">
+                  Резные листья и неприхотливый характер — идеальна для новичков.
+                </p>
+                <button class="button button--dark card__button">Подробнее</button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img class="card__image" src="images/ficus.jpg" alt="Фикус лирата" />
+              <div class="card__body">
+                <h3 class="card__title">Фикус лирата</h3>
+                <p class="card__text">
+                  Крупные скульптурные листья, которые становятся акцентом интерьера.
+                </p>
+                <button class="button button--dark card__button">Подробнее</button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img class="card__image" src="images/sansevieria.jpg" alt="Сансевиерия" />
+              <div class="card__body">
+                <h3 class="card__title">Сансевиерия</h3>
+                <p class="card__text">
+                  Переживёт почти всё: редкий полив, сухой воздух и темноту офиса.
+                </p>
+                <button class="button button--dark card__button">Подробнее</button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img class="card__image" src="images/cactus.jpg" alt="Эхинокактус" />
+              <div class="card__body">
+                <h3 class="card__title">Эхинокактус</h3>
+                <p class="card__text">
+                  Компактный любитель солнца для самого светлого подоконника.
+                </p>
+                <button class="button button--dark card__button">Подробнее</button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img class="card__image" src="images/spathiphyllum.jpg" alt="Спатифиллум" />
+              <div class="card__body">
+                <h3 class="card__title">Спатифиллум</h3>
+                <p class="card__text">
+                  Цветёт почти круглый год и отлично очищает воздух в комнате.
+                </p>
+                <button class="button button--dark card__button">Подробнее</button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img class="card__image" src="images/ficus.jpg" alt="Замиокулькас" />
+              <div class="card__body">
+                <h3 class="card__title">Замиокулькас</h3>
+                <p class="card__text">
+                  «Долларовое дерево» с глянцевыми листьями и запасом терпения.
+                </p>
+                <button class="button button--dark card__button">Подробнее</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about__inner">
+          <h2 class="about__title">Green Home — это не просто магазин</h2>
+
+          <div class="about__list">
+            <div class="about__item">
+              <span class="about__number">01</span>
+              <div class="about__item-body">
+                <h3 class="about__item-title">Культура</h3>
+                <p class="about__item-text">
+                  Мы создали сообщество, где растения — это образ жизни. Наши покупатели — от
+                  новичков до коллекционеров зелёного интерьера.
+                </p>
+              </div>
+            </div>
+
+            <div class="about__item">
+              <span class="about__number">02</span>
+              <div class="about__item-body">
+                <h3 class="about__item-title">Экспертиза</h3>
+                <p class="about__item-text">
+                  Каждое растение проходит проверку нашими ботаниками. Мы знаем всё о видах,
+                  уходе и особенностях каждой модели.
+                </p>
+              </div>
+            </div>
+
+            <div class="about__item">
+              <span class="about__number">03</span>
+              <div class="about__item-body">
+                <h3 class="about__item-title">Забота</h3>
+                <p class="about__item-text">
+                  Бесплатные консультации после покупки: поможем с пересадкой, поливом и
+                  освещением в любое время.
+                </p>
+              </div>
+            </div>
+
+            <div class="about__item">
+              <span class="about__number">04</span>
+              <div class="about__item-body">
+                <h3 class="about__item-title">Гарантия</h3>
+                <p class="about__item-text">
+                  Если растение не прижилось за 30 дней — заменим его или вернём деньги.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__media">
+          <img class="about__image" src="images/shop.jpg" alt="Интерьер магазина растений" />
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <h2 class="reviews__title">Реальные отзывы наших клиентов</h2>
+
+          <div class="reviews__grid">
+            <article class="review">
+              <p class="review__text">
+                «Заказала монстеру — привезли в идеальном состоянии, с подробной инструкцией по
+                уходу. Через месяц выросло два новых листа!»
+              </p>
+              <div class="review__author">
+                <span class="review__avatar">А</span>
+                <div>
+                  <span class="review__name">Анна</span>
+                  <span class="review__role">Москва</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="review">
+              <p class="review__text">
+                «Лучший магазин растений! Консультант помог выбрать сансевиерию под мой график
+                командировок. Живёт и радует.»
+              </p>
+              <div class="review__author">
+                <span class="review__avatar">Д</span>
+                <div>
+                  <span class="review__name">Дмитрий</span>
+                  <span class="review__role">Санкт‑Петербург</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="review">
+              <p class="review__text">
+                «Уже третий заказ. Растения приезжают здоровые, упаковка надёжная, а кашпо ещё
+                и красивые. Рекомендую всем друзьям.»
+              </p>
+              <div class="review__author">
+                <span class="review__avatar">Е</span>
+                <div>
+                  <span class="review__name">Елена</span>
+                  <span class="review__role">Казань</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container contacts__inner">
+          <div class="contacts__info">
+            <h2 class="contacts__title">Свяжитесь с нами</h2>
+
+            <div class="contacts__list">
+              <div class="contacts__item">
+                <span class="contacts__icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"
+                    />
+                  </svg>
+                </span>
+                <div class="contacts__item-body">
+                  <h3 class="contacts__item-title">Телефон</h3>
+                  <p class="contacts__item-text">+7 (911) 805‑74‑18</p>
+                </div>
+              </div>
+
+              <div class="contacts__item">
+                <span class="contacts__icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-10 6L2 7" />
+                  </svg>
+                </span>
+                <div class="contacts__item-body">
+                  <h3 class="contacts__item-title">Email</h3>
+                  <p class="contacts__item-text">info@greenhome.ru</p>
+                </div>
+              </div>
+
+              <div class="contacts__item">
+                <span class="contacts__icon contacts__icon--accent">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 6v6l4 2" />
+                  </svg>
+                </span>
+                <div class="contacts__item-body">
+                  <h3 class="contacts__item-title">Часы работы</h3>
+                  <p class="contacts__item-text">Пн–Пт: 9:00 – 20:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="form contacts__form" action="#" method="post">
+            <h3 class="form__title">Оставьте заявку</h3>
+            <p class="form__subtitle">Мы свяжемся с вами в течение 15 минут</p>
+
+            <input class="form__input" type="text" name="name" placeholder="Ваше имя *" />
+            <input class="form__input" type="tel" name="phone" placeholder="Телефон *" />
+            <input class="form__input" type="email" name="email" placeholder="Email *" />
+            <textarea
+              class="form__textarea"
+              name="message"
+              placeholder="Ваше сообщение..."
+            ></textarea>
+
+            <label class="form__agree">
+              <input class="form__checkbox" type="checkbox" />
+              Согласен с политикой конфиденциальности
+            </label>
+
+            <button class="button button--dark form__submit" type="submit">
+              Отправить заявку
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a class="logo" href="#">
+            <svg class="logo__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20 4C10 4 4.5 9.5 4 17c0 0-.2 3 3 3 8.5 0 13.5-6 13-16z" />
+              <path
+                d="M4.5 20.5C8 14 12 10 17 7.5"
+                stroke="#fff"
+                stroke-width="1.4"
+                fill="none"
+              />
+            </svg>
+            <span class="logo__text">Green&nbsp;Home</span>
+          </a>
+          <p class="footer__description">
+            Растения для каждого дома. Найди идеальную пару для уюта, стиля и чистого воздуха.
+          </p>
+          <div class="footer__social">
+            <a class="footer__social-link" href="#">IG</a>
+            <a class="footer__social-link" href="#">TG</a>
+            <a class="footer__social-link" href="#">VK</a>
+          </div>
+        </div>
+
+        <nav class="footer__nav">
+          <h4 class="footer__heading">Навигация</h4>
+          <a class="footer__link" href="#catalog">Каталог</a>
+          <a class="footer__link" href="#about">О магазине</a>
+          <a class="footer__link" href="#reviews">Отзывы</a>
+          <a class="footer__link" href="#contacts">Контакты</a>
+        </nav>
+
+        <div class="footer__contacts">
+          <h4 class="footer__heading">Контакты</h4>
+          <p class="footer__text">Email: info@greenhome.ru</p>
+          <p class="footer__text">Телефон: +7 (911) 805‑74‑18</p>
+          <button class="button button--outline-light footer__button">Написать нам</button>
+        </div>
+      </div>
+
+      <div class="footer__copyright">© 2025 Green Home. Все права защищены.</div>
+    </footer>
+  </body>
+</html>
